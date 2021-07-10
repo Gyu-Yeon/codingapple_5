@@ -1,0 +1,45 @@
+<script>
+
+// let name1  = 'Kim';
+// let name2 = name1
+// var 이름1 = { name : '김' };
+
+// function 변경(obj){
+//   obj.name  = 'park';
+// }
+
+// 변경(이름1);
+// console.log(이름1);
+
+
+// let name2 = {name: 'park'}
+
+// function change(obj){
+//     obj = {name: 'lee'}
+// }
+// change(name2);
+// console.log(name2)
+
+
+
+
+function Student(name,age){
+  this.name = name;
+  this.age = age;
+  this.sayHi = function(){
+    console.log(`안녕하세요 ${this.name} 입니다`);
+  }
+}
+
+
+function Products(product, price) {
+  this.name = product;
+  this.price = price;
+  this.부가세 = function(){
+    console.log(this.price*0.1)
+  }
+}
+
+let product1 = new Products('shirts', 50000);
+let product2 = new Products('pants', 60000);
+</script> 
